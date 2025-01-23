@@ -1,0 +1,3 @@
+Firstly I created a dictionary romdict, which connects each roman letter with their value ( I to 1; L to 50, etc. ). created number res = 0, iterated through the string S, and added respected value for each letter to the res. 
+Then I checked if there are any V or X after I, any L or C after X, any D or M after C, and took away 2 times respected value ( because I already added it to the res) from the res. 
+Return res

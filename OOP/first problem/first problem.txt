@@ -1,0 +1,1 @@
+first I tried just iterate through full words, and create a new string to add letters. Then I added upper limit for "for" iteration to be minimum length of two words. After iteration, part of the longer word, which wasn't added to the new string, will be attached through concatenation.

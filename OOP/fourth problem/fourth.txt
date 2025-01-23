@@ -1,0 +1,1 @@
+if t is anagram of s, then length of the strings needs to be same, as well as each letter. I created copy of the t, iterated through each letter of s, and deleted their occurrences in the copy. So, if t is anagram copy, after iteration, needs to be empty. Return of the function is just if (emptiness of the copy AND equalness of the t and s strings) is true.

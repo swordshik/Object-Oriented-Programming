@@ -1,0 +1,1 @@
+in python there is function "find" which can show index of the first occurrence of the desired word/string/letter in the string. my solution just uses this function

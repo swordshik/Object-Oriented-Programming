@@ -1,0 +1,1 @@
+create a number res = 0, iterate through the list, and add each element multiplied to 10, in power in descending order, to the res.  Add one to the res, turn it into string, iterate trough string, add to the new list, turning each slice into int. return new list.

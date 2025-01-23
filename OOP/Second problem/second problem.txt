@@ -1,0 +1,1 @@
+code will find and delete each occurrence of the letter of "s" string in "t" once. So, result will be all the letters which weren't in the "s" string

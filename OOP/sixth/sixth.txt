@@ -1,0 +1,1 @@
+Iterate through the list, for each occurrence of the 0 update the list, to delete that 0, and add 0 in the end of the list.

@@ -1,0 +1,13 @@
+from typing import List
+
+class Solution:
+    def plusOne(self, digits: List[int]) -> List[int]:
+        n = 0
+        for i in range(len(digits)):
+            n = n + digits[-1-i] * 10**i
+        n = n + 1
+        st = str(n)
+        list = []
+        for i in range(len(st)):
+            list.append(int(st[i]))
+        return list

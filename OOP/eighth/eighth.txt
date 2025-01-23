@@ -1,0 +1,1 @@
+create the number res = 1. Iterate through the list, and multiply res to each element. Check if it's positive, negative or zero, and return respectively.

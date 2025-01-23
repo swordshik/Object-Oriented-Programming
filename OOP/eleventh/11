@@ -1,0 +1,40 @@
+class Solution:
+    def romanToInt(self, s: str) -> int:
+        romdict = {"I" : 1,
+            "V" : 5,
+            "X" : 10,
+            "L" : 50,
+            'C' : 100,
+            'D' : 500,
+            'M' : 1000}
+        res = 0
+        for el in s:
+            res = res + romdict[el]
+        
+        #I
+        while s.count("I") > 0:
+            try:
+                if s[s.find("I") + 1] == "V" or s[s.find("I") + 1] == "X":
+                    res = res - 2 * romdict["I"]
+            except IndexError:
+                res = res
+            s = s.replace("I", '', 1)
+        
+        #X
+        while s.count("X") > 0:
+            try:
+                if s[s.find("X") + 1] == "L" or s[s.find("X") + 1] == "C":
+                    res = res - 2 * romdict["X"]
+            except IndexError:
+                res = res
+            s = s.replace("X", '', 1)
+        
+        #C
+        while s.count("C") > 0:
+            try:
+                if s[s.find("C") + 1] == "D" or s[s.find("C") + 1] == "M":
+                    res = res - 2 * romdict["C"]
+            except IndexError:
+                res = res
+            s = s.replace("C", '', 1)
+        return res

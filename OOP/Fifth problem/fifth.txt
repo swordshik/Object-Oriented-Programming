@@ -1,0 +1,1 @@
+if the S consists of repeated part (let's call it rep), then max(len(rep)) is len(S)/2. So, S + S consists at least 4 occurences of the rep. if we delete first and last letters of the S + S, there still needs to be more than 2 rep in it. Return is just if there is 2 occurences in S + S [1,-1]

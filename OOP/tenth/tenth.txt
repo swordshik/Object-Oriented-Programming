@@ -1,0 +1,1 @@
+monotonic array means, for each element in the list next element needs to (less than or equal) or (greater than or equal) to the element. if it's true for all element in the list, my code returns True, and False if there is any exception.
