@@ -1,19 +1,41 @@
-
 import personal_account
 
-acc1 = personal_account.PersonalAccount(123, "Sultan", [], 10000)
+listofacc = []
 
+def main():
+    print ("Welcome to the Personal Account Management System\nPLease select the following options:\n1. Create a new account\n2. Deposit money\n3. Withdraw money\n4. Print transaction history\n5. Exit")
+    option = input("Enter the option: ")
+    if option=="1":
+        print("Creating a new account\nPlease enter the following details:\nAccount number:")
+        account_number = int(input())
+        account_holder = input("Account holder name: ")
+        balance = float(input("Initial balance: "))
+        listofacc.append(personal_account.PersonalAccount(account_number, account_holder, [], balance))
+        print("Account has been created successfully")
+        main()
+    elif option=="2":
+        account_number = int(input("Enter the account number: "))
+        amount = float(input("Enter the amount to deposit: "))
+        for acc in listofacc:
+            if acc.get_account_number() == account_number:
+                acc.deposit(amount)
+                print("Amount has been deposited successfully")
+                main()
+    elif option=="3":
+        account_number = int(input("Enter the account number: "))
+        amount = float(input("Enter the amount to withdraw: "))
+        for acc in listofacc:
+            if acc.get_account_number() == account_number:
+                acc.withdraw(amount)
+                print("Amount has been withdrawn successfully")
+                main()
+    elif option=="4":
+        account_number = int(input("Enter the account number: "))
+        for acc in listofacc:
+            if acc.get_account_number() == account_number:
+                acc.print_transaction_history()
+                main()
+    elif option=="5":
+        print("Thank you for using the Personal Account Management System")
 
-acc1.deposit(26)
-print("after adding 26 to the deposit balance is", acc1.get_balance())
-
-acc1.withdraw(100)
-print("after withdrawing 100 from the account blance is:", acc1.get_balance())
-
-print("Current transaction history: ")
-acc1.print_transaction_history()
-
-acc1.set_account_holder("Sultanbek Mratbekov")
-acc1.set_account_number(230102015)
-
-print('\n', acc1, sep='')
+main()
