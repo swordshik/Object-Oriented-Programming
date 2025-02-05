@@ -1,6 +1,7 @@
 # This is the third assignment for OBJECT ORIENTED PROGRAMMING
 
-simple classes, basic methods. main is importing files and creating an object acc1 just to show, that my methods are working
+simple classes, basic methods. main is importing files and asking user to input some data to create an account.
+test - file where some of the trial sessions are stored.
 
 ## imported libraries:
 1. datetime - to automatically store the time when the transaction is happening
