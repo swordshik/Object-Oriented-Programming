@@ -9,3 +9,5 @@ simple classes, basic methods. main is importing files and creating an object ac
 email: beforlifeandmoon@gmail.com
 work-email: sultanbek.muratbekov@alatoo.edu.kg
 telegram: https://t.me/msltnbk
+
+![image](https://github.com/user-attachments/assets/76fcbb57-677e-4298-a379-76faa43d1d84)
