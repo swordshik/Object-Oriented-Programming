@@ -1,6 +1,185 @@
-class Test:
-    def __init__(self, amount):
-        self.amount = amount
-
-    def __str__(self):
-        return f"{amount}"
+Welcome to the Personal Account Management System
+PLease select the following options:
+1. Create a new account
+2. Deposit money
+3. Withdraw money
+4. Print transaction history
+5. Change account holder name
+6. Change account number
+7. Exit
+Enter the option: 1
+Creating a new account
+Please enter the following details:
+Account number:
+1
+Account holder name: m
+Initial balance: 100
+Account has been created successfully
+Welcome to the Personal Account Management System
+PLease select the following options:
+1. Create a new account
+2. Deposit money
+3. Withdraw money
+4. Print transaction history
+5. Change account holder name
+6. Change account number
+7. Exit
+Enter the option: 2
+Enter the account number: 1
+Enter the amount to deposit: 420
+Amount has been deposited successfully
+Welcome to the Personal Account Management System
+PLease select the following options:
+1. Create a new account
+2. Deposit money
+3. Withdraw money
+4. Print transaction history
+5. Change account holder name
+6. Change account number
+7. Exit
+Enter the option: 3
+Enter the account number: 124
+Enter the amount to withdraw: 124
+Welcome to the Personal Account Management System
+PLease select the following options:
+1. Create a new account
+2. Deposit money
+3. Withdraw money
+4. Print transaction history
+5. Change account holder name
+6. Change account number
+7. Exit
+Enter the option: 3
+Enter the account number: 1
+Enter the amount to withdraw: 123 
+Amount has been withdrawn successfully
+Welcome to the Personal Account Management System
+PLease select the following options:
+1. Create a new account
+2. Deposit money
+3. Withdraw money
+4. Print transaction history
+5. Change account holder name
+6. Change account number
+7. Exit
+Enter the option: & C:/Users/befor/AppData/Local/Microsoft/WindowsApps/python3.11.exe "c:/Users/befor/OneDrive/Рабочий стол/OOP/Object-Oriented-Programming-main/third_assignment/main.py"
+PS C:\Users\befor\OneDrive\Рабочий стол\OOP\Object-Oriented-Programming-main> & C:/Users/befor/AppData/Local/Microsoft/WindowsApps/python3.11.exe "c:/Users/befor/OneDrive/Рабочий стол/OOP/Object-Oriented-Programming-main/third_assignment/main.py"
+Welcome to the Personal Account Management System
+PLease select the following options:
+1. Create a new account
+2. Deposit money
+3. Withdraw money
+4. Print transaction history
+5. Change account holder name
+6. Change account number
+7. Exit
+Enter the option: 1
+Creating a new account
+Please enter the following details:
+Account number:
+1
+Account holder name: m
+Initial balance: 32
+Account has been created successfully
+Welcome to the Personal Account Management System
+PLease select the following options:
+1. Create a new account
+2. Deposit money
+3. Withdraw money
+4. Print transaction history
+5. Change account holder name
+6. Change account number
+7. Exit
+Enter the option: 2
+Enter the account number: 1
+Enter the amount to deposit: 432
+Amount has been deposited successfully
+Welcome to the Personal Account Management System
+PLease select the following options:
+1. Create a new account
+2. Deposit money
+3. Withdraw money
+4. Print transaction history
+5. Change account holder name
+6. Change account number
+7. Exit
+Enter the option: 3
+Enter the account number: 1
+Enter the amount to withdraw: 6352
+Insufficient balance
+Welcome to the Personal Account Management System
+PLease select the following options:
+1. Create a new account
+2. Deposit money
+3. Withdraw money
+4. Print transaction history
+5. Change account holder name
+6. Change account number
+7. Exit
+Enter the option: 3
+Enter the account number: 1
+Enter the amount to withdraw: 23
+Amount has been withdrawn successfully
+Welcome to the Personal Account Management System
+PLease select the following options:
+1. Create a new account
+2. Deposit money
+3. Withdraw money
+4. Print transaction history
+5. Change account holder name
+6. Change account number
+7. Exit
+Enter the option: 4
+Enter the account number: 1
+Amount(432.0, 2025-02-10 17:57:40.090862, Deposit)
+Amount(23.0, 2025-02-10 17:57:55.253049, Withdraw)
+Welcome to the Personal Account Management System
+PLease select the following options:
+1. Create a new account
+2. Deposit money
+3. Withdraw money
+4. Print transaction history
+5. Change account holder name
+6. Change account number
+7. Exit
+Enter the option: 5
+Enter the account number: 1
+Enter the new account holder name: mm
+Account holder name has been changed successfully
+Welcome to the Personal Account Management System
+PLease select the following options:
+1. Create a new account
+2. Deposit money
+3. Withdraw money
+4. Print transaction history
+5. Change account holder name
+6. Change account number
+7. Exit
+Enter the option: 6
+Enter the account number: 1
+Enter the new account number: 123
+Account number has been changed successfully
+Welcome to the Personal Account Management System
+PLease select the following options:
+1. Create a new account
+2. Deposit money
+3. Withdraw money
+4. Print transaction history
+5. Change account holder name
+6. Change account number
+7. Exit
+Enter the option: 3
+Enter the account number: 123
+Enter the amount to withdraw: 313
+Amount has been withdrawn successfully
+Welcome to the Personal Account Management System
+PLease select the following options:
+1. Create a new account
+2. Deposit money
+3. Withdraw money
+4. Print transaction history
+5. Change account holder name
+6. Change account number
+7. Exit
+Enter the option: 7
+Thank you for using the Personal Account Management System
