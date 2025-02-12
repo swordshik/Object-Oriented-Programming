@@ -1,0 +1,26 @@
+import datetime
+import re
+import string
+import random
+
+class UserUtils:
+    
+    def generate_user_id():
+        return str(datetime.datetime.now().year)[2:] + str(random.randint(0, 9999999)).zfill(7)
+    
+    def generate_strong_password():
+        characters = string.ascii_letters + string.digits + string.punctuation
+
+        while True:
+            password = ''.join(random.choice(characters) for i in range(8))
+
+            if (re.search(r'[A-Z]', password)) and re.search(r'[a-z]', password) and re.search(r'[0-9]', password) and re.search(r'[\W_]', password):
+                return password
+            
+    def generate_email(self, name, surname, domain = 'alatoo.edu.kg'):
+        return name + '.' + surname + '@' + domain
+        
+    def get_age(self, user_birthday):
+        today = datetime.datetime.now()           
+        return age
+        
