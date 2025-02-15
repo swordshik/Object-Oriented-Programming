@@ -49,3 +49,5 @@ def main():
 
     elif inp == 6:
         print("Goodbye! Thank you for using our service!")
+
+main()

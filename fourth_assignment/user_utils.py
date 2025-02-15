@@ -18,7 +18,7 @@ class UserUtils:
                 return password
             
     def generate_email(self, name, surname, domain = 'alatoo.edu.kg'):
-        return name + '.' + surname + '@' + domain
+        return (name + '.' + surname + '@' + domain).lower()
         
     def get_age(self, user_birthday):
         self.birthday = user_birthday.replace('.', '/')
