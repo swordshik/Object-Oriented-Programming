@@ -2,9 +2,8 @@ import user_utils
 import user_service
 
 class User:
-    import user_utils
     
-    def __init__(self, name, surname, birthday):
+    def __init__(self, name = " ", surname = " ", birthday = "01.01.2000"):
         self.name = name
         self.surname = surname
         self.birthday = birthday
@@ -12,8 +11,11 @@ class User:
         self.password = user_utils.UserUtils.generate_strong_password()
         self.user_id = user_utils.UserUtils.generate_user_id()
 
+    def set_user_id(self, user_id):
+        self.user_id = user_id
+
     def get_details(self):
-        return f'Name: {self.name}, Surname: {self.surname}, Birthday: {self.birthday}, Email: {self.email}, Password: {self.password}, User ID: {self.user_id}'
+        return f'Name: {self.name}, User ID: {self.user_id}, Surname: {self.surname}, Birthday: {self.birthday}, Email: {self.email}, Password: {self.password}'
     
     def get_age(self):
-        
+        print(user_utils.UserUtils.get_age(self.birthday))

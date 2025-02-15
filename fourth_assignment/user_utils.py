@@ -21,6 +21,9 @@ class UserUtils:
         return name + '.' + surname + '@' + domain
         
     def get_age(self, user_birthday):
-        today = datetime.datetime.now()           
-        return age
+        self.birthday = user_birthday.replace('.', '/')
+        self.birthday_datetime = datetime.strptime(self.birthday, '%d/%m/%Y')
+        self.today = datetime.today()
+        self.age = self.today.year - self.birthday_datetime.year - ((self.today.month, self.today.day) < (self.birthday_datetime.month, self.birthday_datetime.day))
+        return self.age
         
