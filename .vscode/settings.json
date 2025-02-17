@@ -1,0 +1,7 @@
+{
+    "python.testing.pytestArgs": [
+        "fourth_assignment"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}

@@ -1,4 +1,5 @@
 import user_utils, user_service, user
+from user import User
 
 def main():
     inp = int(input(print("Welcome to the User Service!\nHow can I help you?\n1. Add User\n2. Find User\n3. Delete User\n4. Update User\n5. Get Number of Users\n6. Exit")))
@@ -7,7 +8,7 @@ def main():
         name = input("Enter name: ")
         surname = input("Enter surname: ")
         birthday = input("Enter birthday: ")
-        user_service.UserService.add_user(user.User(name, surname, birthday))
+        UserService.add_user(User(name, surname, birthday))
         print("User added successfully!")
         main()
 
