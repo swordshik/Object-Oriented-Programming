@@ -9,3 +9,8 @@ def calculate_age(birthdate):
     age = today.year - birthdate.year - ((today.month, today.day) < (birthdate.month, birthdate.day))
     return age
 
+def generate_password():
+    return ''.join(random.choices(string.ascii_letters + string.digits, k=8))
+
+def get_details():
+    return f'Name: {self.name}\nSurname: {self.surname}\nBirthday: {self.birthday}\nPassword: {self.password}'
