@@ -1,7 +1,7 @@
-import Laptop from laptop
-import Device from device
-import Tablet from tablet
-import Smartphone from smartphone
+from laptop import Laptop 
+from device import Device 
+from tablet import Tablet 
+from smartphone import Smartphone 
 
 class Cart:
     def __init__(self):

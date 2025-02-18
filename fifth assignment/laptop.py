@@ -1,4 +1,4 @@
-import Device from device
+from device import Device 
 
 class Laptop(Device):
     def __init__(self, name = 'Nothing', price = 0, stock = 0, warranty_period = 1, ram_size = 0, processor_speed = 0):

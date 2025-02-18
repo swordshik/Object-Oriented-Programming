@@ -1,14 +1,13 @@
 import user_utils
 
 class UserService:
-    def __init__(cls, users = {}):
-        cls.users = users
+    users = {}
 
     def add_user(cls, user):
         if user.user_id in cls.users:
             new_id = user_utils.UserUtils.generate_user_id()
             user.set_user_id(new_id)
-            add_user(user)
+            cls.add_user(user)
         else:
             cls.users[user.user_id] = user
 
@@ -20,6 +19,7 @@ class UserService:
 
     def update_user(cls, user_id, user):
         cls.users[user_id] = user
-
+        
+    @classmethod
     def get_number(cls):
         return len(cls.users)

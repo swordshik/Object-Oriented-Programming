@@ -1,4 +1,4 @@
-import Device from device
+from device import Device 
 
 class Tablet(Device):
     def __init__(self, name = 'Nothing', price = 0, stock = 0, warranty_period = 1, screen_resolution = 0, weight = 0):

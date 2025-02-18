@@ -1,4 +1,4 @@
-import Device from device
+from device import Device 
 
 class Smartphone(Device):
 

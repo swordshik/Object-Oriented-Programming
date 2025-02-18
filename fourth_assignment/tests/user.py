@@ -1,5 +1,4 @@
 import user_utils
-import user_service
 
 class User:
     

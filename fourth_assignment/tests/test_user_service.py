@@ -1,5 +1,4 @@
 import user_service
-import user_utils
 import user
 
 class TestUserService:
