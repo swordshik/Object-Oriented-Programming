@@ -16,9 +16,6 @@ class UserUtils:
 
             if (re.search(r'[A-Z]', password)) and re.search(r'[a-z]', password) and re.search(r'[0-9]', password) and re.search(r'[\W_]', password):
                 return password
-            
-    def generate_email( name, surname, domain = 'alatoo.edu.kg'):
-        return (name + '.' + surname + '@' + domain).lower()
         
     def get_age(self, user_birthday):
         self.birthday = user_birthday.replace('.', '/')

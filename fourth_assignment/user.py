@@ -7,7 +7,7 @@ class User:
         self.name = name
         self.surname = surname
         self.birthday = birthday
-        self.email = user_utils.UserUtils.generate_email(name, surname)
+        self.email = (name + '.' + surname + '@' + domain).lower()
         self.password = user_utils.UserUtils.generate_strong_password()
         self.user_id = user_utils.UserUtils.generate_user_id()
 
