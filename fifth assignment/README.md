@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project demonstrates the use of object-oriented programming concepts in Python. It includes classes for managing various types of devices (laptops, tablets, smartphones), a shopping cart, and a shop. The project allows users to add devices to a cart, remove devices, display cart information, calculate total price, apply discounts, and checkout.
+This is the fifth assignment for my OOP course in university. It includes classes for managing various types of devices (laptops, tablets, smartphones), a shopping cart, and a shop. The project allows users to add devices to a cart, remove devices, display cart information, calculate total price, apply discounts, and checkout.
 
 ## Classes
 
@@ -41,5 +41,7 @@ To run the code, follow these steps:
 2. Clone the repository or download the project files.
 3. Navigate to the project directory.
 4. Run the `main.py` file to start the shopping application
+
+# UML for this assignment
 
 ![image](https://github.com/user-attachments/assets/8418ddb0-6c1f-4804-ab17-8fcb1eb7eee0)
