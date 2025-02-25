@@ -1,8 +1,3 @@
-from laptop import Laptop 
-from device import Device 
-from tablet import Tablet 
-from smartphone import Smartphone
-
 class Shop:
     def __init__(self):
         self.devices = []

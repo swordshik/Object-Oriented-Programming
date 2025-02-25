@@ -9,12 +9,6 @@ class Smartphone(Device):
 
     def display_info(self):
         return f'Name: {self.name}, Price: {self.get_price()}, Stock: {self.stock}, Warranty period: {self.get_warranty_period()}, Screen size: {self.screen_size}, Battery size: {self.battery_size}'
-    
-    def set_screen_size(self, screen_size):
-        self.screen_size = screen_size
-    
-    def set_battery_size(self, battery_size):
-        self.battery_size = battery_size
 
     def make_call(self):
         print('Calling...')

@@ -1,5 +1,4 @@
 from laptop import Laptop 
-from device import Device 
 from tablet import Tablet 
 from smartphone import Smartphone
 from cart import Cart
