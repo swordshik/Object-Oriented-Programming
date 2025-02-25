@@ -25,12 +25,12 @@ The `Smartphone` class inherits from the `Device` class and represents a smartph
 
 ### Cart Class
 
-The `Cart` class manages a shopping cart with the following methods:
+The `Cart` class manages a shopping cart
 
 
 ### Shop Class
 
-The `Shop` class manages a collection of devices with the following methods:
+The `Shop` class manages a collection of devices
 
 
 ## Running the Code
