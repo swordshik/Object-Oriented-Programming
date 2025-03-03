@@ -10,12 +10,12 @@ class BMICalculator(QMainWindow):
         self.setGeometry(400, 250, 300, 300)
         self.setWindowIcon(QIcon("sixth_assignment\images.png"))
 
-        # Central widget and layout
+        
         center_ = QWidget()
         self.setCentralWidget(center_)
         layout = QVBoxLayout(center_)
 
-        # Unit selection
+        
         choosing_units = QHBoxLayout()
         self.unit_group = QButtonGroup(self)
         
@@ -30,7 +30,7 @@ class BMICalculator(QMainWindow):
 
         layout.addLayout(choosing_units)
 
-        # Weight input
+        
         weight_layout = QHBoxLayout()
         self.weight_label = QLabel("Weight:")
         self.weight_input = QLineEdit()
@@ -38,7 +38,7 @@ class BMICalculator(QMainWindow):
         weight_layout.addWidget(self.weight_input)
         layout.addLayout(weight_layout)
 
-        # Height input
+        
         height_layout = QHBoxLayout()
         self.height_label = QLabel("Height:")
         self.height_input = QLineEdit()
@@ -46,24 +46,24 @@ class BMICalculator(QMainWindow):
         height_layout.addWidget(self.height_input)
         layout.addLayout(height_layout)
 
-        # Calculate button
+        
         self.calculate_button = QPushButton("Calculate BMI")
         self.calculate_button.clicked.connect(self.calculate_bmi)
         layout.addWidget(self.calculate_button)
 
-        # Result labels
+        
         self.bmi_result = QLabel("BMI: ")
         self.bmi_status = QLabel("Status: ")
         layout.addWidget(self.bmi_result)
         layout.addWidget(self.bmi_status)
 
-        # Menu bar
+        
         self.create_menu()
 
     def create_menu(self):
         menu_bar = self.menuBar()
 
-        # File menu
+        
         file_menu = menu_bar.addMenu("File")
         
         exit_action = QAction("Exit", self)
@@ -74,7 +74,7 @@ class BMICalculator(QMainWindow):
         clear_action.triggered.connect(self.clear_inputs)
         file_menu.addAction(clear_action)
 
-        # Help menu
+        
         help_menu = menu_bar.addMenu("Help")
         about_action = QAction("About", self)
         about_action.triggered.connect(self.show_about)
@@ -95,7 +95,7 @@ class BMICalculator(QMainWindow):
                                "Click 'Calculate BMI' to view your BMI result and status.")
 
     def calculate_bmi(self):
-        # Get inputs
+        
         weight_text = self.weight_input.text()
         height_text = self.height_input.text()
 
@@ -108,14 +108,14 @@ class BMICalculator(QMainWindow):
             QMessageBox.warning(self, "Error", "Please enter valid positive numbers.")
             return
 
-        # Calculate BMI
+        
         if self.metric_.isChecked():
             bmi = weight / (height ** 2)
         else:
             bmi = (weight * 703) / (height ** 2)
         bmi_rounded = round(bmi, 2)
 
-        # Determine status
+        
         if bmi < 18.5:
             status = "Underweight"
             color = "blue"
@@ -129,6 +129,6 @@ class BMICalculator(QMainWindow):
             status = "Obese"
             color =  "red"
 
-        # Update results
+        
         self.bmi_result.setText(f"BMI: {bmi_rounded}")
         self.bmi_status.setText(f"Status: <font color='{color}'>{status}</font>")
