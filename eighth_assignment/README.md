@@ -26,7 +26,8 @@ To run the code, follow these steps:
 1. Ensure you have Python installed on your machine.
 2. Clone the repository or download the project files.
 3. Navigate to the project directory.
-4. Run the `main.py` file to start the shopping application
+4. Run the `main.py` file to start the employee management system
+5. 
 
 
 
