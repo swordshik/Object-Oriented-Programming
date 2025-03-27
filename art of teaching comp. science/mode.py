@@ -3,4 +3,4 @@ def finding_mode(lst):
     return mode
 
 numbers = [float(i) for i in input().split()]
-print(finding_mode(numbers))
+print(f'Mode of the given list = {finding_mode(numbers)}')
