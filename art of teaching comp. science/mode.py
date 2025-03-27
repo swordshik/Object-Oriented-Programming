@@ -1,7 +1,16 @@
 
 def finding_mode(lst):
-    mode = max(set(lst), key = lst.count)
-    return mode
+    counts = [lst.count(i) for i in lst]
+    max_count = max(counts)
+
+    maxs = [i for i in set(lst) if lst.count(i) == max_count]
+    
+    if len(maxs) > 1:
+        return 'There is no mode.'
+    else:
+        return maxs[0]
+
 
 numbers = [float(i) for i in input('Write a list of numbers:\n').split()]
-print(f'Mode of the given list = {finding_mode(numbers)}')
+
+print(finding_mode(numbers))
