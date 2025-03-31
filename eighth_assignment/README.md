@@ -27,9 +27,6 @@ To run the code, follow these steps:
 2. Clone the repository or download the project files.
 3. Navigate to the project directory.
 4. Run the `main.py` file to start the employee management system
-5. 
-
-
 
 
 ## Example of the output:
