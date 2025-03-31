@@ -1,4 +1,4 @@
-# Fifth Assignment: Object-Oriented Programming
+# Eigth Assignment Object-Oriented Programming: `Employee Database`
 
 ## Overview
 
@@ -12,11 +12,11 @@ The `Database` class is class which creates or connects this code to the employe
 
 ### EmployeeDAO Class
 
-The "EmployeeDAO" class is a class in which all the Create, Reading, Update and Delete procceses are handled
+The `EmployeeDAO` class is a class in which all the Create, Reading, Update and Delete procceses are handled
 
 ### Employee Class
 
-The `Employee` class is an entity class whoch takes name, salary etc. and creates an object, to then insert it to the database via 'EmployeeDAO' class
+The `Employee` class is an entity class whoch takes name, salary etc. and creates an object, to then insert it to the database via `EmployeeDAO` class
 
 
 ## Running the Code
